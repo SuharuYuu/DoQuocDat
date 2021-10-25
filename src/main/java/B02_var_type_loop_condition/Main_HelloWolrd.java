@@ -18,9 +18,16 @@ public class Main_HelloWolrd {
         int sum = summary(2,4);
         System.out.println(sum);
         System.out.println(summary(3, 4));
+        System.out.println(summary(3.5, 2.5));
     }
 
     private static int summary(int a, int b){
+        System.out.println("int version");
+        return a + b;
+    }
+    //overloading
+    private static double summary(double a, double b){
+        System.out.println("double version");
         return a + b;
     }
 }
