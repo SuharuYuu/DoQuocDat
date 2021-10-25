@@ -18,7 +18,7 @@ public class Recusion {
         int result = sum(10);
         System.out.println(result);
     }
-
+    //Toán đệ quy: (1+2+3+...+k)
     public static int sum(int k){
         if(k>0){
             return k + sum(k-1);
@@ -26,5 +26,4 @@ public class Recusion {
             return 0;
         }
     }
-
 }
