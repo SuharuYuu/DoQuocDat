@@ -15,6 +15,12 @@ public class Main_HelloWolrd {
      */
     public static void main(String[] args) {
         System.out.println("Hello World");
+        int sum = summary(2,4);
+        System.out.println(sum);
+        System.out.println(summary(3, 4));
     }
-    
+
+    private static int summary(int a, int b){
+        return a + b;
+    }
 }
