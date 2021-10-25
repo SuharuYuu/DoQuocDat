@@ -37,3 +37,4 @@ public class Exercise {
             return 1;
         }
     }
+}
