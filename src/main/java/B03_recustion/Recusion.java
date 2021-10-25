@@ -15,7 +15,7 @@ public class Recusion {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        int result = sum(10);
+        int result = sum(3);
         System.out.println(result);
     }
     //Toán đệ quy: (1+2+3+...+k)
