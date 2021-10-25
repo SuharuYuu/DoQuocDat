@@ -13,6 +13,7 @@ public class Main_HelloWolrd {
     /**
      * @param args the command line arguments
      */
+    /*hàm main sẽ tìm đến hàm tương ứng để chạy code*/
     public static void main(String[] args) {
         System.out.println("Hello World");
         int sum = summary(2,4);
@@ -30,4 +31,5 @@ public class Main_HelloWolrd {
         System.out.println("double version");
         return a + b;
     }
+
 }
