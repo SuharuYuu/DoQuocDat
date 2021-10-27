@@ -12,6 +12,7 @@ public class Exercise {
     8>=6.5 kha
     6.5>=5 trung binh
     <5 kem
+    tim sv co diem lon nhat
     */
     public static void main(String[] args) {
         Scanner SinhVien = new Scanner(System.in);
@@ -19,7 +20,7 @@ public class Exercise {
         float avg;
 
         System.out.println("Number of Student:");
-        long SoluongSV = SinhVien.nextLong();
+        int SoluongSV = SinhVien.nextInt();
         SinhVien.nextLine();
         for(int i = 0; i < SoluongSV ; i++){
             System.out.println("Enter Name");
@@ -47,6 +48,6 @@ public class Exercise {
                 System.out.println("Hoc Sinh Yeu \n" + avg);
             }
         }
+        
     }
-
 }
