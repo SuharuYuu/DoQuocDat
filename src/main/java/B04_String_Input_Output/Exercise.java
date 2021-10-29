@@ -45,19 +45,20 @@ public class Exercise {
             DiemHoaSV[i] = SinhVien.nextFloat();
             SinhVien.nextLine();
             avg[i] = (DiemHoaSV[i] + DiemLySV[i] + DiemHoaSV[i])/3;
-            if(avg[i] >= 8){
-                System.out.println("Hoc Sinh Gioi \n" + avg[i]);
-            }else if(avg[i] < 8 && avg[i] >= 6.5){
-                System.out.println("Hoc Sinh Kha \n" + avg[i]);
-            }else if(avg[i] < 6.5 && avg[i] >=5){
-                System.out.println("Hoc Sinh Trung Binh \n" + avg[i]);
-            }else{
-                System.out.println("Hoc Sinh Yeu \n" + avg[i]);
-            }
         }
         float max = avg[0];
         String maxStudent = TenSV[0];
+        System.out.println("==========================================");
         for(int i = 0; i < SoluongSV; i++){
+            if(avg[i] >= 8){
+                System.out.println(TenSV[i]+" "+LopSV[i]+" Hoc Sinh Gioi \n"+avg[i]);
+            }else if(avg[i] < 8 && avg[i] >= 6.5){
+                System.out.println(TenSV[i]+" "+LopSV[i]+" Hoc Sinh Kha \n"+avg[i]);
+            }else if(avg[i] < 6.5 && avg[i] >=5){
+                System.out.println(TenSV[i]+" "+LopSV[i]+" Hoc Sinh Trung Binh \n"+avg[i]);
+            }else{
+                System.out.println(TenSV[i]+" "+LopSV[i]+" Hoc Sinh Yeu \n"+avg[i]);
+            }
             if(max < avg[i]){
                 max = avg[i];
                 maxStudent = TenSV[i];
