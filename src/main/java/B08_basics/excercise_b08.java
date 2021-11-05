@@ -16,6 +16,7 @@ public class excercise_b08 {
         for(int i = 0; i < N; i++){
             phanTu[i] = inPut.nextInt();
         }
+        arrayOutput(N);
 
         int Max = phanTu[0];
         System.out.println("Max number: ");
@@ -41,5 +42,7 @@ public class excercise_b08 {
         }
         System.out.println("Min: "+Min  );
     }
+    public static void arrayOutput(int N){
 
+    }
 }
