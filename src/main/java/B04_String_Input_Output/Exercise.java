@@ -132,18 +132,23 @@ public class Exercise {
                 System.out.println("Student \""+maxStudent+"\" have a highest point: "+max);
                 System.out.println("Student \""+minStudent+"\" have a lowest point: "+min);
             }
+                break;
             case 2:{
                 System.out.println("Student \""+maxStudentChemiStry+"\" have a highest point: "+maxChemistry);
                 System.out.println("Student \""+minStudentChemiStry+"\" have a lowest point: "+minChemintry);
             }
+                break;
             case 3:{
                 System.out.println("Student \""+maxStudentLiterature+"\" have a highest point: "+maxLiterature);
                 System.out.println("Student \""+minStudentLiterature+"\" have a lowest point: "+minLiterature);
             }
+                break;
             case 4:{
                 System.out.println("Student \""+maxStudentMath+"\" have a highest point: "+maxMath);
                 System.out.println("Student \""+minStudentMath+"\" have a lowest point: "+minMath);
             }
+                break;
+            default:break;
         }
     }
 }
