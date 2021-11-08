@@ -43,6 +43,7 @@ public class excercise_b08 {
         System.out.println("Min: "+Min  );
     }
     public static void arrayOutput(int N){
+        
 
     }
 }
