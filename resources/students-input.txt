@@ -1,0 +1,6 @@
+101, Nguyen Van C, D95 k12, 12t, ha noi
+102, Nguyen Van D, D95 k12, 13t, ha tinh
+103, Nguyen Van A, D95 k12, 14t, ha tay
+104, Nguyen Van E, D95 k12, 15t, ha dong
+105, Nguyen Van B, D95 k12, 16t, ha nam
+107, Đào Cute, D55 K19, 19t, mong cai

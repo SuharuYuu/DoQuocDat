@@ -20,6 +20,7 @@ public class Main_HelloWolrd {
         System.out.println(sum);
         System.out.println(summary(3, 4));
         System.out.println(summary(3.5, 2.5));
+
     }
 
     private static int summary(int a, int b){

@@ -23,15 +23,14 @@ public class OOP {
 //
 //        motoCycle myMotor = new motoCycle();
 //        myMotor.input();
-        Scanner InputRectangle = new Scanner(System.in);
-        System.err.println("input length and width");
-        int length = InputRectangle.nextInt();
-        InputRectangle.nextLine();
-        int width = InputRectangle.nextInt();
-        Rectangle myRectangle = new Rectangle();
 
-        myRectangle.input(length, width);
-        myRectangle.caculate();
+
+
+        Rectangle myRectangle = new Rectangle();
+        myRectangle.input();
+        System.out.println("Length.Rectagle: "+myRectangle.length+" | Width.Rectangle: "+myRectangle.width);
+        System.out.println("Rectangle.Area: "+myRectangle.area());
+        System.out.println("Rectangle.Perimeter: "+myRectangle.perimeter());
 
     }
 
@@ -41,19 +40,18 @@ class Rectangle{
     int length;
     int width;
 
-    void input(int length, int width){
-        this.length = length;
-        this.width = width;
-
-        System.out.println("Length.Rectagle: "+length+" | Width.Rectangle: "+width);
-
+    void input(){
+        Scanner InputRectangle = new Scanner(System.in);
+        System.err.println("input length and width");
+        length = InputRectangle.nextInt();
+        InputRectangle.nextLine();
+        width = InputRectangle.nextInt();
     }
-    public void caculate(){
-        System.out.println("Area.Rectangle: ");
-        System.out.println(length * width);
-
-        System.out.println("Perimeter.Rectangle: ");
-        System.out.println((length + width)*2);
+    public int area(){
+        return length * width;
+    }
+    public int perimeter(){
+        return (length + width)*2;
     }
 }
 //class Car {
