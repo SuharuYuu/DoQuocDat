@@ -12,12 +12,15 @@ public class Student {
     private int id;
     private String name;
     private String klass;
-    private String age;
     private String address;
+    private String phone;
 
+    private double diemToan;
+    private double diemVan;
+    private double diemAnh;
     private double c;
+    private double english;
     private double java;
-    private double eSM;
 
     //constructor
 
@@ -25,13 +28,12 @@ public class Student {
 
     }
 
-    public Student(int id, String name, String klass, String age, String address) {
+    public Student(int id, String name, String klass, String address, String phone) {
         this.id = id;
         this.name = name;
         this.klass = klass;
-        this.age = age;
         this.address = address;
-
+        this.phone = phone;
     }
 
     public Student input(Scanner sc){
@@ -45,13 +47,14 @@ public class Student {
         System.out.println("Enter class: ");
         String klass = sc.nextLine();
 
-        System.out.println("Enter age: ");
-        String age = sc.nextLine();
-
         System.out.println("Enter address: ");
         String address = sc.nextLine();
 
-        return new Student(id, name, klass, age, address);
+        System.out.println("Enter number phone: ");
+        String phone = sc.nextLine();
+
+
+        return new Student(id, name, klass, address, phone);
     }
     public void edit(Scanner sc) {
 
@@ -63,14 +66,10 @@ public class Student {
 
         System.out.println("Enter new address: ");
         this.address = sc.nextLine();
-    }
 
-    public String getName() {
-        return name;
-    }
+        System.out.println("Enter new numer phone: ");
+        this.phone = sc.nextLine();
 
-    public void setName(String name) {
-        this.name = name;
     }
 
     public int getId() {
@@ -81,20 +80,20 @@ public class Student {
         this.id = id;
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
     public String getKlass() {
         return klass;
     }
 
     public void setKlass(String klass) {
         this.klass = klass;
-    }
-
-    public String getAge() {
-        return age;
-    }
-
-    public void setAge(String age) {
-        this.age = age;
     }
 
     public String getAddress() {
@@ -105,12 +104,52 @@ public class Student {
         this.address = address;
     }
 
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
+
+    public double getDiemToan() {
+        return diemToan;
+    }
+
+    public void setDiemToan(double diemToan) {
+        this.diemToan = diemToan;
+    }
+
+    public double getDiemVan() {
+        return diemVan;
+    }
+
+    public void setDiemVan(double diemVan) {
+        this.diemVan = diemVan;
+    }
+
+    public double getDiemAnh() {
+        return diemAnh;
+    }
+
+    public void setDiemAnh(double diemAnh) {
+        this.diemAnh = diemAnh;
+    }
+
     public double getC() {
         return c;
     }
 
     public void setC(double c) {
         this.c = c;
+    }
+
+    public double getEnglish() {
+        return english;
+    }
+
+    public void setEnglish(double english) {
+        this.english = english;
     }
 
     public double getJava() {
@@ -121,13 +160,7 @@ public class Student {
         this.java = java;
     }
 
-    public double geteSM() {
-        return eSM;
-    }
 
-    public void seteSM(double eSM) {
-        this.eSM = eSM;
-    }
 
 //    @Override
 //    public String toString() {
@@ -136,7 +169,7 @@ public class Student {
 
     @Override
     public String toString() {
-        return id + ", " + name + ", " + klass + ", " + age + ", " + address;
+        return id + ", " + name + ", " + klass + ", " + address + ", " + phone;
     }
 
 

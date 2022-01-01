@@ -10,6 +10,8 @@ import java.io.IOException;
 import java.util.Collections;
 import java.util.List;
 import java.util.Scanner;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  *
@@ -38,6 +40,21 @@ public class StudentManager {
         Collections.sort(
                 list,
                 (s1, s2) -> s1.getName().compareTo(s2.getName()));
+    }
+    public void sortbyAddress(){
+        Collections.sort(
+                list,
+                (s1, s2) -> s1.getAddress().compareTo(s2.getAddress()));
+    }
+    public void sortbyPhone() {
+        Collections.sort(
+                list,
+                (s1, s2) -> s1.getPhone().compareTo(s2.getPhone()));
+    }
+    public void sortbyKlass () {
+        Collections.sort(
+                list,
+                (s1, s2) -> s1.getKlass().compareTo(s2.getKlass()));
     }
     public void sortById(){
         Collections.sort(

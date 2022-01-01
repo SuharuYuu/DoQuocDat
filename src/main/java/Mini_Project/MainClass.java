@@ -31,7 +31,7 @@ public class MainClass {
 
             switch (choose) {
                 case "1":
-                    System.out.println("Add student: ");
+                    System.out.println("Add book: ");
                     studentManager.addStudent(scanner);
                     break;
                 case "2":
